@@ -1,2 +1,5 @@
-<h2><%= @author.name %></h2>
-<a href="mailto:<%= @author.email %>"><%= @author.email %></a>
+<h2><%= @post.title %></h2>
+<%= link_to "edit", edit_post_path(@post) %>
+<p>A <%= @post.category %> post.</p>
+<hr />
+<p><%= @post.content %></p>
